@@ -1,0 +1,6 @@
+site_name: Aion Documentation
+site_url: https://docs.aionbyte.com/
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
