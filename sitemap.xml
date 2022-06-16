@@ -10,4 +10,19 @@
          <lastmod>2022-06-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://docs.aionbyte.com/azure/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aionbyte.com/pipeline/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aionbyte.com/uptime/</loc>
+         <lastmod>2022-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

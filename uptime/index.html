@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.aionbyte.com/about/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.aionbyte.com/uptime/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>About - Aion Documentation</title>
+    <title>Uptime - Aion Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "About";
-        var mkdocs_page_input_path = "about.md";
-        var mkdocs_page_url = "/about/";
+        var mkdocs_page_name = "Uptime";
+        var mkdocs_page_input_path = "uptime.md";
+        var mkdocs_page_url = "/uptime/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -52,14 +52,22 @@
                 <li class="toctree-l1"><a class="reference internal" href="../pipeline/">Pipeline</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../uptime/">Uptime</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Uptime</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#websites">Websites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#direct-dependancy-of-websites">Direct dependancy of websites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#health-check">Health check</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sla">SLA</a>
+    </li>
+    </ul>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">About</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
                 </li>
               </ul>
       </div>
@@ -75,7 +83,7 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>About</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Uptime</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -85,16 +93,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="support">Support</h1>
+                <h1 id="uptime">Uptime</h1>
+<h2 id="websites">Websites</h2>
 <ul>
-<li><code>support@aionbyte.com</code></li>
-<li><code>support@e2way.co</code></li>
+<li><code>online store/storefront</code> for customer to browse products and make purchase</li>
+<li><code>seller portal</code> for seller to promote products and create sell pages</li>
+<li><code>fulfillment</code> for fulfiller to complete order and make changes to shipping status</li>
+</ul>
+<h2 id="direct-dependancy-of-websites">Direct dependancy of websites</h2>
+<p><img alt="e2way websites" src="../img/e2way_frontend.drawio.png" /></p>
+<h2 id="health-check">Health check</h2>
+<p>Websites should have health check url to identify if the websites is online</p>
+<p>For example</p>
+<pre><code>https://onlinestore.e2way.co/status
+</code></pre>
+<p>The url should return status code 200 if the websites itself and all direct dependencies is up.</p>
+<p>If the response code is not 200, that means that the website is not healthy and count as downtime.</p>
+<h2 id="sla">SLA</h2>
+<p>At the moment, Websites should give SLA uptime of 99%, which means following possible periods of Downtime</p>
+<ul>
+<li>Per Day 4 minutes 26 seconds</li>
+<li>Per Week 10 minutes 5 seconds</li>
+<li>Per Month 43 minutes 50 seconds</li>
+<li>Per Year 8 hours 45 minutes 57 seconds</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../uptime/" class="btn btn-neutral float-left" title="Uptime"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../pipeline/" class="btn btn-neutral float-left" title="Pipeline"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -117,8 +145,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../uptime/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../pipeline/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
