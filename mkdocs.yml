@@ -2,5 +2,8 @@ site_name: Aion Documentation
 site_url: https://docs.aionbyte.com/
 nav:
   - Home: index.md
+  - Architecture: azure.md
+  - Pipeline: pipeline.md
+  - Uptime: uptime.md
   - About: about.md
 theme: readthedocs
