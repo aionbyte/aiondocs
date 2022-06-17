@@ -20,6 +20,10 @@ The url should return status code 200 if the websites itself and all direct depe
 
 If the response code is not 200, that means that the website is not healthy and count as downtime.
 
+![e2way uptime](img/e2way_hc_sample.drawio.png)
+
+![e2way uptime](img/e2way-uptime-kuma.png)
+
 ## SLA
 At the moment, Websites should give SLA uptime of 99%, which means following possible periods of Downtime
 
