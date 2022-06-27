@@ -51,6 +51,10 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Pipeline</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#cicd-flow">CICD Flow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#repository-structure">Repository Structure</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -89,9 +93,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="azure-cloud-architecture">Azure Cloud Architecture</h1>
-<p>e2way applications on Azure Cloud Services </p>
+                <h1 id="cicd">CICD</h1>
+<h2 id="cicd-flow">CICD Flow</h2>
 <p><img alt="e2way pipeline" src="../img/e2way_pipeline.drawio.png" /></p>
+<h2 id="repository-structure">Repository Structure</h2>
+<p>├── apps
+│   ├── base
+│   ├── dev
+│   └── prod
+├── crds
+├── infrastructure
+│   ├── base
+│   ├── dev 
+│   └── prod
+└── clusters
+    ├── dev
+    └── prod</p>
               
             </div>
           </div><footer>
