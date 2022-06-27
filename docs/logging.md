@@ -20,10 +20,10 @@ Cách áp dụng này sẽ tránh cho việc phải config thông tin logging ba
 ## Log formatting
 Các library theo các framework với các default output log settings có thể được tận dụng.
 Tuy nhiên có một số thông tin có thể được đưa vào log output để dễ dàng hơn trong việc debug.
- - `Correlation ID`: được khởi tạo từ client hoặc service đầu tiên xử lý request. Correlation ID sẽ được passing sang các service tiếp theo xử lý request.
+ - `Correlation ID` : được khởi tạo từ client hoặc service đầu tiên xử lý request. Correlation ID sẽ được passing sang các service tiếp theo xử lý request.
  Việc này sẽ giúp cho việc query các log liên quan đến lỗi dễ dàng hơn và xác định được request đã được xử lý ở service nào.
- - `User ID`: khi một user báo cáo hệ thống lỗi, nếu các request của user đều được gắn user id thì khi query log với param là user id và error code sẽ giảm thời gian xác định nguyên nhân request bị lỗi.
- - `Datetime`: thường các logging library của framework đã bao gồm sẵn việc logging ngày giờ. Tuy nhiên có thể chuẩn hoá lại Datetime format theo nhu cầu business.
+ - `User ID` : khi một user báo cáo hệ thống lỗi, nếu các request của user đều được gắn user id thì khi query log với param là user id và error code sẽ giảm thời gian xác định nguyên nhân request bị lỗi.
+ - `Datetime` : thường các logging library của framework đã bao gồm sẵn việc logging ngày giờ. Tuy nhiên có thể chuẩn hoá lại Datetime format theo nhu cầu business.
 
 Việc log output được định dạng là `text` hoặc `json` có thể giúp log colecter transform dữ liệu nhanh hơn tuỳ vào các tool được sử dụng.
 

@@ -24,6 +24,8 @@ If the response code is not 200, that means that the website is not healthy and 
 
 ![e2way uptime](img/e2way-uptime-kuma.png)
 
+![e2way uptime](img/e2way_uptime_check_push.drawio.png)
+
 ## SLA
 At the moment, Websites should give SLA uptime of 99%, which means following possible periods of Downtime
 
